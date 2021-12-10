@@ -38,6 +38,21 @@ const app = new Vue({
     currentSlide: 0,
   },
   methods: {
-    
-  }
+    imgUp: function() {
+      if(this.currentSlide < this.images.length - 1) {
+        this.currentSlide++;
+      } else {
+        this.currentSlide = 0;
+      };
+    },
+
+    imgDown: function() {
+      if(this.currentSlide > 0) {
+        this.currentSlide--;
+      } else {
+        this.currentSlide = this.images.length - 1;
+      };
+    }
+  },
+  
 });
