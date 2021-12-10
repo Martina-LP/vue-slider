@@ -37,9 +37,9 @@
           <button class="chevron bottom"><i class="fas fa-chevron-down"></i></button>
           <!-- End arrows -->
           
-          <!-- <div class="thumbnail-image">
-            <img class="side-image" src="img/02.jpg" alt="Svizzera">
-          </div> -->
+          <div v-for="(image, index) in images" class="thumbnail-image" :class="{'active': index === currentSlide}">
+            <img class="side-image" :src="image.items" :alt="image.title">
+          </div>
           
         </div>
         <!-- End right container -->
