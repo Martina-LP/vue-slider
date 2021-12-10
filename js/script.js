@@ -52,7 +52,13 @@ const app = new Vue({
       } else {
         this.currentSlide = this.images.length - 1;
       };
-    }
+    },
+
+    changeCurrentSlide: function(index) {
+      this.currentSlide = index;
+    },
+
   },
+  
   
 });

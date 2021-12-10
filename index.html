@@ -37,7 +37,7 @@
           <button @click="imgDown" class="chevron bottom"><i class="fas fa-chevron-down"></i></button>
           <!-- End arrows -->
           
-          <div v-for="(image, index) in images" class="thumbnail-image" :class="{'active': index === currentSlide}">
+          <div @click="changeCurrentSlide(index)" v-for="(image, index) in images" class="thumbnail-image" :class="{'active': index === currentSlide}">
             <img class="side-image" :src="image.items" :alt="image.title">
           </div>
           
