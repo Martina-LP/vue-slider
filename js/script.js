@@ -58,6 +58,9 @@ const app = new Vue({
       this.currentSlide = index;
     },
 
+    autoplayTiming: function() {
+      setInterval(this.imgUp, 3000);
+    }
   },
   
   
