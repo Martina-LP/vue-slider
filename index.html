@@ -19,13 +19,13 @@
         <!-- Left container -->
         <div class="container-left">
           
-          <!-- <div class="main-image">
-            <img class="side-image" src="img/02.jpg" alt="Svizzera">
+          <div class="main-image">
+            <img class="side-image" :src="images[currentSlide].items" :alt="images[currentSlide].title">
             <div class="text">
-              <h2>Svizzera</h2>
-              <p>Lorem ipsum</p>
+              <h2>{{images[currentSlide].title}}</h2>
+              <p>{{images[currentSlide].text}}</p>
             </div>
-          </div> -->
+          </div>
           
         </div>
         <!-- End left container -->
